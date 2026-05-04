@@ -32,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Migrate Turso to v2
-        run: './scripts/migrateup.sh'
+        run: npm run db:migrate
         
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
