@@ -31,6 +31,9 @@ jobs:
       - name: Build the app
         run: npm run build
 
+      - name: Migrate Turso to v2
+        run: './scripts/migrateup.sh'
+        
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
