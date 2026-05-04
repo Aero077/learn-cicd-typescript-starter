@@ -13,7 +13,6 @@ type APIConfig = {
 
 type DBConfig = {
   url: string | undefined;
-  authToken: string | undefined;
 };
 
 export const config: Config = {
